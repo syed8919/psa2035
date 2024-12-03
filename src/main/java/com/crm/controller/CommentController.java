@@ -21,6 +21,8 @@ public class CommentController {
     public String createComment(@RequestBody Comment comment, @RequestParam long postId){
         System.out.println(1000);
         System.out.println(3000);
+          System.out.println(1000);
+        System.out.println(3000);
         Post post = postRepository.findById(postId).get();
         comment.setPost(post);
         commentRepository.save(comment);
